@@ -374,11 +374,6 @@ def process_user_input(msg: str, chat_history: list, thoughts_msg: gr.Text,
 def process_hil_input(tool_selection, tool_confirm, chat_history, thoughts_msg,
                       progress: gr.Progress = gr.Progress(track_tqdm=True)):
     confirm_message = HumanMessage(tool_confirm)
-    # tool_message = ToolMessage("Please use the following tool and arguments: " + tool_selection)
-    # First we update the state with the verification message and the input message.
-    # note that `generate_verification_message` sets the message ID to be the same
-    # as the ID from the original tool call message. Updating the state with this
-    # message will overwrite the previous tool call.
 
     global tool_call_message
 
@@ -569,11 +564,7 @@ with gr.Blocks(title="RealTwin AI",
                                        elem_id="hil_confirm",
                                        interactive=False,
                                        label="")
-                # hil_feedback = gr.MultimodalTextbox(placeholder="Provide your correction...",
-                #                                     interactive=False,
-                #                                     label="",
-                #                                     sources=['upload'],
-                #                                     visible=True)
+
 
             gr.Examples(
                 label='Question Hints',

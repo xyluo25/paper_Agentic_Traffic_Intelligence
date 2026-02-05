@@ -90,12 +90,7 @@ graph_builder.add_conditional_edges(
     "osm_agent",
     # Next, we pass in the function that will determine which node is called next.
     should_continue,
-    # Finally we pass in a mapping.
-    # The keys are strings, and the values are other nodes.
-    # END is a special node marking that the graph should finish.
-    # What will happen is we will call `should_continue`, and then the output of that
-    # will be matched against the keys in this mapping.
-    # Based on which one it matches, that node will then be called.
+
     {
         # If `tools`, then we call the tool node.
         "continue": "action_osm",
@@ -134,11 +129,6 @@ graph_builder.add_edge("action_rag", "rag_agent")
 
 HIL_Agent = graph_builder.compile(checkpointer=MemorySaver(),
                                   interrupt_before=["action_rag", "action_osm", "action_sumo", "action_rt"])
-
-
-# display the graph
-# display(Image(HIL_Agent.get_graph().draw_mermaid_png()))
-
 
 # Helper function to construct message asking for verification
 def generate_verification_message(message: AIMessage) -> None:

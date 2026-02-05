@@ -73,29 +73,3 @@ SupervisorAgent = create_supervisor(
     parallel_tool_calls=False,
     output_mode="full_history",  # "last_message"
 )
-
-
-# Compile for supervisor workflow
-# class ChatBotSupervisor:
-#     def __init__(self):
-#         self.app = SupervisorAgent.compile(checkpointer=MemorySaver())
-#     def dialogue(self, input_msg: str) -> str:
-#         """ Send a message to the bot and get a response. """
-#         print("Agentic Real-Twin Assistant is thinking, one sec...")
-#         try:
-#             result = self.app.invoke(
-#                 input={"messages": [{"role": "user", "content": input_msg}]},
-#                 config={"configurable": {"thread_id": "812"}},
-#             )
-#         except Exception as e:
-#             return {"messages": [AIMessage(content=f"Error during dialogue: {e}")]}
-#         # Return the full message history by default.
-#         return result["messages"]
-
-
-# Initialize bot
-# try:
-#     ChatBotDialog = ChatBotSupervisor()
-# except Exception as e:
-#     print(f"Error initializing the bot: {e}")
-#     sys.exit(1)
