@@ -1,0 +1,28 @@
+##############################################################################
+# Copyright (c) 2024, Oak Ridge National Laboratory                          #
+# All rights reserved.                                                       #
+#                                                                            #
+# This file is part of RealTwin and is distributed under a GPL               #
+# license. For the licensing terms see the LICENSE file in the top-level     #
+# directory.                                                                 #
+#                                                                            #
+# Contributors: ORNL Real-Twin Team                                          #
+# Contact: realtwin@ornl.gov                                                 #
+##############################################################################
+'''
+class to host Traffic element of Abstract scenario
+'''
+
+
+class Traffic:
+    '''The traffic class to host the Traffic element of Abstract scenario'''
+    def __init__(self):
+        self.AllTrafficTypes = ['Volume', 'TurningRatio', 'Trajectory']
+        self.Volume = None
+        self.TurningRatio = None
+        self.Trajectory = {}
+        self.VolumeLookupTable = None
+
+    def isEmpty(self):
+        """Check if the Traffic element is empty"""
+        pass

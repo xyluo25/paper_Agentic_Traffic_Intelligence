@@ -1,0 +1,71 @@
+.app {
+    margin: 5px !important;
+    /* padding: 0 !important; */
+}
+
+#title_header_layout{
+    padding: auto;
+    margin: auto;
+}
+
+#title_header {
+    height: auto;
+    font-size: 10px !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    font-family: cursive !important;
+    padding: 0;
+    margin: 0;
+}
+
+.svelte-1to105q{
+    display: none !important;
+}
+.container{
+    padding-top: 0 !important;
+}
+
+#left_layout {
+    width: 30%;
+}
+
+#right_layout {
+    overflow: scroll !important;
+}
+
+#input_container {
+    /* background-color: rgb(51, 175, 40); */
+}
+
+footer {
+    display: none !important
+}
+
+#thoughts_box {
+    width: 120px !important;
+}
+
+#submit_button {
+    height: 85px !important;
+    display: flex;
+}
+
+#stop_button {
+    height: 85px !important;
+}
+
+#hil_layout {
+    /* background-color: rgb(100, 190, 100) !important; */
+}
+
+#hil_selection {
+    /* background-color: rgb(198, 230, 22) !important; */
+}
+
+#hil_confirm {
+    font-weight: bold !important;
+}
+
+#example_layout {
+    font-size: 6px !important;
+}

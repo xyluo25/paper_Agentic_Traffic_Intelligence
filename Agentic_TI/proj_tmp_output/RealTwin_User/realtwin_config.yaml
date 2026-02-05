@@ -1,0 +1,53 @@
+demo_data: null
+input_dir: proj_tmp_output/RealTwin_User
+output_dir: null
+Network:
+  NetworkName: chatt
+  NetworkVertices:
+  - - -85.14977588011192
+    - 35.040346288414916
+  - - -85.15823020212477
+    - 35.04345144844759
+  - - -85.15829457513502
+    - 35.043293338482925
+  - - -85.14986171079225
+    - 35.04018378032611
+Traffic: VERY Well
+Control: Synchro_signal.csv
+Calibration:
+  scenario_config:
+    sim_start_time: 28800
+    sim_end_time: 32400
+    calibration_target:
+      GEH: 5
+      GEHPercent: 0.85
+    calibration_time_step: 1
+    allow_u_turn: false
+  turn_inflow:
+    max_inflow: 200
+  behavior:
+    initial_params:
+      min_gap: 2.5
+      acceleration: 2.6
+      deceleration: 4.5
+      sigma: 0.5
+      tau: 1.0
+      emergencyDecel: 9.0
+  ga_config:
+    model_selection: BaseGA
+    epoch: 20
+    pop_size: 10
+    pc: 0.75
+    pm: 0.1
+  sa_config:
+    model_selection: OriginalSA
+    epoch: 20
+    temp_init: 100
+    cooling_rate: 0.891
+    step_size: 0.1
+    scale: 0.1
+  ts_config:
+    epoch: 20
+    tabu_size: 10
+    neighbour_size: 10
+    perturbation_scale: 0.05

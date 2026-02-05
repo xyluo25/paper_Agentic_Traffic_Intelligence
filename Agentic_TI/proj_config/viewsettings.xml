@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<viewsettings>
+    <scheme name="real world"/>
+
+    <delay value="50"/>
+
+    <snapshot file="sumo_net_view.png" time="0"/>
+
+    <delay value="42"/>
+</viewsettings>
