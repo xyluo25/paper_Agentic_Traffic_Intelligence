@@ -17,7 +17,7 @@ The proposed framework incorporates human-in-the-loop (HIL) control, retrieval-a
 
 ## YouTube Video
 
-[![Agentic Traffic Intelligence](https://www.youtube.com/watch?v=tkR8s11WwfU)](https://www.youtube.com/watch?v=tkR8s11WwfU)
+[![Youtube Video]()](https://www.youtube.com/watch?v=tkR8s11WwfU)
 
 ## Installation
 
